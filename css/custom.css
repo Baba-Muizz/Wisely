@@ -50,15 +50,6 @@ header .btn{
 .icon-bar{
   background: var(--light-grey-color);;
 }
-.carousel-caption{
-  left:0px;
-  width: 40%;
-  text-align:left;
-}
-.item{
-  background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5));
-}
-
 
 .service {
   padding:2rem 1rem 2rem 1rem;
@@ -283,12 +274,15 @@ footer .form form{
 textarea{
   resize: none;
 }
-.red{
+.redBg{
   color: rgb(235, 235, 235);
   background-color: rgb(100, 10, 10);
   /* padding: 10px; */
   text-align: center;
   border-radius: 5px;
+}
+.red{
+  color: red;
 }
 
 
@@ -300,15 +294,18 @@ textarea{
   
 }
 
-@media screen and (max-width:375px){
-
-  .logo{
+@media screen and (max-width:475px){
+  header{
     text-align: center;
   }
-  .phone_bg{
-    text-align: center;
+  .navbar{
+    margin-top: 60px;
   }
-  
+  footer .copyright {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+  }
 }
 
 
@@ -331,4 +328,40 @@ section .about img{
  max-width:100%;
  object-fit: cover;
 
+}
+
+
+
+
+
+
+
+
+
+
+/* Section Quote  */
+
+section.quote{
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+  background-color: rgb(245, 245, 245);
+}
+.col-md-6 {
+  margin: 0px;
+  padding: 0px;
+}
+.transport_checkbox{
+  padding: 5px;
+}
+
+section.quote h3{
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+.submit-btn{
+  background-color: #fd6b02;
+  font-weight: bold;
+}
+.submit-btn:hover{
+  background-color: #070707;
 }
