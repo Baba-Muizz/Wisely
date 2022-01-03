@@ -1,0 +1,334 @@
+body{
+  font-family: sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color:#fd6b02;
+  --dark-lilac-color:#b34d04;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+.bg-button{
+  background: #C8A2C8;
+}
+header{
+  width:100%;
+  height:100px;
+  padding-top: 30px;
+  border-top:3px solid #4b2002;
+}
+header .btn{
+  background: var(--primary-color);
+}
+.navbar{
+  border-top:1px solid #4b2002;
+  margin-bottom:0;
+}
+#navbar{
+  padding-left: 0;
+}
+.navbar a{
+  color: #333;
+}
+
+#navbar ul li a{
+  color: #333333;
+  padding-bottom:10px;
+  font-size: large;
+  font-family: sans-serif;
+}
+#navbar ul li a:hover,#navbar ul li a:focus{
+  background:none;
+  color : #fd6b02;
+}
+
+.icon-bar{
+  background: var(--light-grey-color);;
+}
+.carousel-caption{
+  left:0px;
+  width: 40%;
+  text-align:left;
+}
+.item{
+  background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5));
+}
+
+
+.service {
+  padding:2rem 1rem 2rem 1rem;
+  background:#fff;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+
+}
+.service-name{
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  /* right: 1.5rem; */
+  color:#fd6b02;;
+  text-shadow: 0 0 1rem #000;
+  background-color:#000;
+  padding: 5px;
+  margin: 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 15px 0;
+  border: 1px solid rgb(170, 170, 170);
+  box-shadow: 2px 1px 7px 2px #888888;
+  padding: 5px;
+  
+}
+
+.card {
+  width: 35rem;
+  position: relative;
+  perspective: 150rem;
+  
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.front-side {
+  text-align: center;
+  background-color:#dadada;
+  border-radius: 0.3rem;
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+  font-family: sans-serif;
+}
+
+.change > .front-side {
+  transform: translateZ(-5rem) translateX(3rem);
+  box-shadow: 0 2rem 4rem #777;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+
+
+
+.back-side {
+  position: absolute;
+  top: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  box-shadow: 0 2rem 4rem #777;
+  flex-direction:column;
+  transform: translateZ(-5rem) translateX(3rem);
+  opacity: 0;
+  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.change > .back-side {
+  transform: translateZ(0) translateX(0);
+  box-shadow: 0 0.5rem 2rem #aaa;
+  opacity: 0.9;
+}
+
+.back-side p{
+  font-size:2rem;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  padding:4rem 2rem;
+}
+
+
+.card-button {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: none;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  letter-spacing: 0.2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.navigation-button {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--light-grey-color);
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+
+/* End of Services */
+
+
+/* FOOTER SECTION */
+footer {
+  background:#111111;
+  color: #ddd;
+  font-size: 12px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li a{
+  color: inherit;
+  padding: 5px 0px 5px 15px;
+  display: block;
+  font-family: sans-serif;
+}
+footer ul li a:hover {
+  color: #fff;
+  background: #333;
+  text-decoration:none;
+}
+footer .text-right a i{
+  padding: 0 5px;
+  font-style: none;
+}
+footer .copyright {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+/* ############################## */
+
+.p-10{
+  padding-top: 10px;
+}
+.contact_details{
+  background-color:#fd6b02;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: large;
+}
+.orange{
+  color: #fd6b02;;
+}
+
+.phone_bg{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background:#fd6b02;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.service_text{
+  padding: 20px 10px;
+  
+}
+
+footer{
+padding: 40px 10px;
+}
+
+footer .form form{
+  padding: 10px;
+  margin: 10px 0;
+}
+.form-control{
+  padding: 10px;
+  margin: 10px 0;
+}
+.social_media_links a i:hover{
+  color: rgb(255, 255, 255);
+}
+
+.submit_button{
+  color: #000;
+  font-weight: bolder;
+  font-size: large;
+  background-color: #fd6b02;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.submit_button:hover{
+  background-color:#fff
+}
+textarea{
+  resize: none;
+}
+.red{
+  color: rgb(235, 235, 235);
+  background-color: rgb(100, 10, 10);
+  /* padding: 10px; */
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* media queries  */
+@media screen and (max-width:1023px){
+  .navbar{
+    border-top:none;
+  }
+  
+}
+
+@media screen and (max-width:375px){
+
+  .logo{
+    text-align: center;
+  }
+  .phone_bg{
+    text-align: center;
+  }
+  
+}
+
+
+
+
+
+
+
+/* About US Page  */
+section.about_us{
+  margin: 30px 10px;
+}
+
+section .about{
+  padding: 20px;
+  font-size: large;
+}
+
+section .about img{
+ max-width:100%;
+ object-fit: cover;
+
+}
